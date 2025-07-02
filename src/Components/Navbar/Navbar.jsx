@@ -1,11 +1,11 @@
 import React from "react";
 import "./Navbar.css";
-import Navsec from "./navsec";
 import Homemain from "./Homemain";
+import Navsec from "..Navbar/navsec";
 const Navbar = () => {
   return (
     <>
-      <Navsec />
+      <Navsec/>
       <div className="nav">
         <Homemain />
       </div>
