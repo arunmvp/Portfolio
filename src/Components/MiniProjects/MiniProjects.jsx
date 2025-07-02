@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import ProjectCard from "./Projectcard";
 import { motion } from "framer-motion";
 import project1 from "../../assets/box.png"; 
-import "./miniProjects.css"; 
+import "./MiniProjects.css";
 
 const MiniProjects = () => {
   const allProjects = [
