@@ -1,6 +1,6 @@
 import React from "react";
 import "./TechStack.css";
-import { motion } from "framer-motion";
+import { motion } from "framer-motion"; 
 import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaNode, FaGitAlt, FaFigma } from "react-icons/fa";
 import { SiMysql, SiFirebase, SiPostman, SiBootstrap, SiMui, SiExpress } from "react-icons/si";
 
@@ -15,38 +15,39 @@ const backendDatabaseSkills = [
   { title: "Node.js", icon: <FaNode />, percent: 85 },
   { title: "Express.js", icon: <SiExpress />, percent: 80 },
   { title: "MySQL", icon: <SiMysql />, percent: 75 },
-  { title: "Firebase", icon: <SiFirebase />, percent: 70 },
-];
+  { title: "Firebase", icon: <SiFirebase />, percent: 70 },  
+]; 
 
-const otherTools = [
+const otherTools = [ 
   { title: "Bootstrap", icon: <SiBootstrap /> },
   { title: "Material UI", icon: <SiMui /> },
   { title: "Postman", icon: <SiPostman /> },
   { title: "Git & GitHub", icon: <FaGitAlt /> },
-  { title: "Figma", icon: <FaFigma /> },
-];
+  { title: "Figma", icon: <FaFigma /> }, 
+]; 
 
 const TechStack = () => {
   return (
     <div className="tech-section">
       <h2 className="tech-heading">🛠 Tech Stack</h2>
-
+      
       <div className="tech-grid">
-        <div className="skill-group">
-          <h3>Frontend</h3>
-          {frontendSkills.map((skill, index) => (
+        <div className="skill-group"> 
+          <h3>Frontend</h3> 
+          {frontendSkills.map((skill, index) => ( 
             <div className="progress-box" key={index}>
               <div className="label">
-                {skill.icon} {skill.title}
-              </div>
-              <div className="bar">
+                 
+                {skill.icon} {skill.title} 
+              </div> 
+              <div className="bar">  
                 <motion.div
-                  className="fill"
-                  initial={{ width: 0 }}
-                  whileInView={{ width: `${skill.percent}%` }}
-                  transition={{ duration: 1 }}
+                  className="fill" 
+                  initial={{ width: 0 }} 
+                  whileInView={{ width: `${skill.percent}%` }}  
+                  transition={{ duration: 1 }} 
                 />
-              </div>
+              </div> 
             </div>
           ))}
         </div>
@@ -76,8 +77,8 @@ const TechStack = () => {
         <motion.div
           className="tools-box"
           initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
+          whileInView={{ opacity: 1, y: 0 }} 
+          transition={{ duration: 0.6 }} 
         >
           {otherTools.map((tool, index) => (
             <motion.div className="tool" key={index}
