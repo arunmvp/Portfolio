@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { FaBars, FaTimes } from "react-icons/fa";
-import "./navbar.css";
-import logo from '../../assets/images.png';
+import "../../Navbar/Navbar.css";
+import logo from '../../../assets/images.png';
 import { motion } from "framer-motion";
 
 const Navsec = () => {
