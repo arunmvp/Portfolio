@@ -1,6 +1,6 @@
 import './App.css'
 import Contact from './Components/Contact/Contact'
-import Education from './Components/Education/education'
+import Education from './Components/Education/Education'
 import Footer from './Components/Footer/Footer'
 import MiniProjects from './Components/MiniProjects/MiniProjects'
 import Navbar from './Components/Navbar/Navbar'
