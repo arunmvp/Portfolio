@@ -21,7 +21,7 @@
 }
 .title1 span {
   display: inline-block;
-  white-space: pre;
+  white-space: pre; 
 }
 .reveal-char {
   display: inline-block;
@@ -169,63 +169,84 @@
   box-shadow: 0 0px 7px #33EBD3;
   color: #33EBD3;
 }
+@media screen and (min-width: 1025px) and (max-width: 1068px){
+  .mainsec1{
+    padding-left: 0% !important;
+    padding-top: 10% !important;
+  }
+  .mainsec2{
+    padding-top: 10% !important;
+  }
 
-/* Tablet view (768px and below) */
-@media (max-width: 1024px) {
+}
+@media screen and (max-width: 1024px) {
   .mainsec {
-    flex-direction: column;
+    flex-direction: column-reverse; /* ✅ mainsec2 on top, mainsec1 below */
     align-items: center;
     justify-content: center;
-    margin-top: 20px;
+    width: 100%;
+    height: auto !important;
   }
+
+  .mainsec1,
   .mainsec2 {
     width: 100%;
-    order: 1;
-    height: 90%;
-    /* padding-top: 5%; */
+    height: max-content !important;
   }
+
   .mainsec1 {
-    width: 100%;
-    height: 60%;
-    padding: 30px 20px;
-    padding-top: 5px !important;
+    padding: 20px;
     text-align: center;
     align-items: center;
-    order: 2;
+  }
+
+  .mainsec2 {
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
   }
 
   .title1 {
-    font-size: 48px;
+    font-size: 44px;
   }
 
   .subtitle1 {
-    font-size: 36px;
+    font-size: 32px;
   }
 
   .icons1 {
     justify-content: center;
     flex-wrap: wrap;
+    gap: 15px;
   }
 
   .download-btn {
     width: 200px;
     height: 45px;
     font-size: 16px;
+    margin-top: 30px;
   }
 
   .code-box {
-    height: 300px;
-    width: 300px;
+    height: 280px;
+    width: 280px;
   }
 
   .propic {
-    width: 294px;
-    height: 294px;
+    width: 274px;
+    height: 274px;
+  }
+
+  .tag-icon {
+    font-size: 45px;
+    right: -20px;
   }
 }
 
+
 /* Mobile view (768px and below) */
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .title1 {
     font-size: 48px;
   }

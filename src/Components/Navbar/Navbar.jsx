@@ -4,12 +4,12 @@ import Homemain from "./Homemain";
 import Navsec from "./Navsec/Navsec"
 const Navbar = () => {
   return (
-    <>
+    <section id="home">
       <Navsec/>
-      <div className="nav">
+      <div className="nav"> 
         <Homemain />
       </div>
-    </>
+    </section>
   );
 };
 

@@ -151,7 +151,7 @@
     z-index: 999;
   }
   .nav {
-    height: 95vh;
+    height: 80vh !important ;
     background-position: right;
   }
   .navbar {
@@ -185,7 +185,7 @@
 }
 
 /* ✅ Tablet Styles (600px to 1024px) */
-@media (min-width: 600px) and (max-width: 1024px) {
+@media (max-width: 1068px) {
   .nav-links {
     position: absolute;
     top: 110px;
@@ -207,7 +207,7 @@
     z-index: 999;
   }
   .nav {
-    height: 90vh;
+    min-height: 78vh !important;
     background-position: right;
   }
   .navbar {
@@ -234,6 +234,7 @@
     right: 3px;
     z-index: 1001;
     padding-right: 20px;
+    padding-top: 10px;
   }
   .logo {
     height: 55px;

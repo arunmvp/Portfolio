@@ -37,7 +37,7 @@
 }
 .fill {
   height: 100%;
-  background: #33ebd3;
+  background: #29b09e;
   border-radius: 5px;
 }
 .others {
@@ -58,17 +58,19 @@
   font-size: 0.9rem;
   color: white;
   transition: all 0.3s;
+  
 }
 .tool p {
   margin-top: 6px;
   font-size: 0.85rem;
 }
 .tool:hover {
-  background-color: #228073;
+  background-color: #29b09e;
   color: white;
+  transition: all .5s;
 }
 .skill-group h3{
   font-size: 1.5rem;
   margin-bottom: 25px;
-  color: #33ebd3;
+  color: #29b09e;
 }

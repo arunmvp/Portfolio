@@ -1,0 +1,72 @@
+.back-to-top {
+  position: fixed;
+  bottom: 30px;
+  right: 50px;
+  background-color: #0db6d4;
+  color: #000;
+  border-radius: 50%;
+  height: max-content;
+  padding: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  z-index: 1000;
+  animation: popIn 0.5s ease forwards;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.back-to-top:hover {
+  background-color: transparent;
+  transform: scale(1.1);
+  border: 1px solid rgb(178, 177, 176);
+  transition: all .4s;
+}
+.back-to-top:hover .up-icon{
+    color: antiquewhite;
+  transition: all .4s;
+
+}
+
+.up-icon {
+  font-size: 1.5rem;
+  animation: tiltRotate 2s ease-in-out infinite;
+}
+
+@keyframes popIn {
+  from {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes tiltRotate {
+  0%, 100% { transform: translateY(0); }
+  25% { transform: translateY(2px); }
+  75% { transform: translateY(3px); }
+}
+
+@media screen and (max-width: 768px) {
+  .back-to-top {
+    bottom: 20px;
+    right: 20px;
+    padding: 12px;
+  }
+
+  .up-icon {
+    font-size: 1.3rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .back-to-top {
+    bottom: 15px;
+    right: 15px;
+    padding: 10px;
+  }
+
+  .up-icon {
+    font-size: 1.2rem;
+  }
+}

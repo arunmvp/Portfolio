@@ -20,7 +20,7 @@ const Homemain = () => {
   const name = "Hi, I’m Arun.";
 
   return (
-    <div className="mainsec">
+    <section className="mainsec" id="home">
       <div className="mainsec1">
         {/* Typing animation */}
         <h1 className="title1">
@@ -122,7 +122,7 @@ const Homemain = () => {
           <div className="tag-icon">&lt;/&gt;</div>
         </div>
       </motion.div>
-    </div>
+    </section>
   );
 };
 
