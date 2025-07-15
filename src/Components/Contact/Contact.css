@@ -116,7 +116,7 @@
 /* Responsive */
 @media (max-width: 768px) {
   .contact-container {
-    grid-template-columns: 1fr;
+    grid-template-columns: 2fr;
   }
 
   .contact-info {
@@ -132,9 +132,9 @@
     font-size: 1rem;
   }
 }
-@media screen and (max-width:1024px) {
+@media screen and (min-width:769px) and (max-width:1024px) {
   .contact-container{
-    grid-template-columns: 2fr 2fr;
+    grid-template-columns: 2fr 2fr; 
     gap: 3rem;
   }
   

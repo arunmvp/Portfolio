@@ -13,8 +13,8 @@ function App() {
   return (
 
     <>
-    <Scroll/>
-     <Navbar/>
+    <Scroll/> 
+     <Navbar/> 
      <SkillSection/>
      <MiniProjects/>
      <TechStack/>

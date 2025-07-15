@@ -259,7 +259,8 @@
 
   }
   .mainsec2{
-    height: 90%;
+    height: 100% !important;
+    padding-top: 30px;
   }
   .mainsec1{
     height: 90%;

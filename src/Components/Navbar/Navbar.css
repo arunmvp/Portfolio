@@ -151,11 +151,13 @@
     z-index: 999;
   }
   .nav {
-    height: 80vh !important ;
+    min-height: 95vh !important ;
     background-position: right;
+    width: 100% !important;
   }
   .navbar {
     justify-content: space-between;
+    
   }
   .nav-links.active { 
     right: 0;
@@ -185,7 +187,7 @@
 }
 
 /* ✅ Tablet Styles (600px to 1024px) */
-@media (max-width: 1068px) {
+@media screen and (min-width: 769px) and  (max-width: 1024px) {
   .nav-links {
     position: absolute;
     top: 110px;
@@ -207,7 +209,7 @@
     z-index: 999;
   }
   .nav {
-    min-height: 78vh !important;
+    min-height: 70vh !important;
     background-position: right;
   }
   .navbar {

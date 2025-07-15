@@ -7,7 +7,7 @@ const Navbar = () => {
     <section id="home">
       <Navsec/>
       <div className="nav"> 
-        <Homemain />
+        <Homemain /> 
       </div>
     </section>
   );

@@ -49,8 +49,8 @@
 
 @media screen and (max-width: 768px) {
   .back-to-top {
-    bottom: 20px;
-    right: 20px;
+    bottom: 25px;
+    right: 25px;
     padding: 12px;
   }
 
@@ -61,8 +61,8 @@
 
 @media screen and (max-width: 480px) {
   .back-to-top {
-    bottom: 15px;
-    right: 15px;
+    bottom: 25px;
+    right: 25px;
     padding: 10px;
   }
 
