@@ -6,22 +6,22 @@ import MiniProjects from './Components/MiniProjects/MiniProjects'
 import Navbar from './Components/Navbar/Navbar'
 import Scroll from './Components/Scroll/Scroll'
 import SkillSection from './Components/Skillbars/SkillSection'
-import TechStack from './Components/TechStack.jsx/TechStack'
+import TechStack from './Components/TechStack.jsx/TechStack' 
 
-function App() {
+function App() { 
 
   return (
 
     <>
-    <Scroll/> 
-     <Navbar/> 
-     <SkillSection/>
-     <MiniProjects/>
-     <TechStack/>
+    <Scroll/>  
+     <Navbar/>  
+     <SkillSection/> 
+     <MiniProjects/> 
+     <TechStack/> 
      <Education/>
      <Contact/>
      <Footer/>
-    </>
+    </> 
   )
 }
 

@@ -1,7 +1,10 @@
 import React, { useState } from "react";
 import ProjectCard from "./Projectcard";
 import { motion } from "framer-motion";
-import project1 from "../../assets/box.png"; 
+import project1 from "../../assets/todo.png"; 
+import project2 from "../../assets/cart.png"; 
+import project3 from "../../assets/movies.png"; 
+import ecom from "../../assets/ecommerce.png"; 
 import "./MiniProjects.css";
 
 const MiniProjects = () => {
@@ -9,30 +12,30 @@ const MiniProjects = () => {
     {
       image: project1,
       title: "Todo App",
-      tech: "React",
-      github: "#",
-      demo: "#",
-    },
-    {
-      image: project1,
-      title: "Weather App",
       tech: "JavaScript",
-      github: "#",
-      demo: "#",
+      github: "https://github.com/arunmvp/mini/tree/6423bb9d41bf0eaab69a716c0614b86e249ac08d/Todo", 
+      demo: "https://miniprojectsarun.netlify.app/todo/",
     },
     {
-      image: project1,
+      image: project3,
+      title: "Movies Api",
+      tech: "JavaScript",
+      github: "https://github.com/arunmvp/mini/tree/6423bb9d41bf0eaab69a716c0614b86e249ac08d/Movie",
+      demo: "https://miniprojectsarun.netlify.app/movie/movie",
+    },
+    {
+      image: project2,
       title: "Cart UI",
       tech: "JavaScript",
-      github: "#",
-      demo: "#",
-    },
-    {
-      image: project1,
-      title: "Portfolio",
-      tech: "React",
-      github: "#",
-      demo: "#",
+      github: "https://github.com/arunmvp/mini/tree/6423bb9d41bf0eaab69a716c0614b86e249ac08d/Cart", 
+      demo: "https://miniprojectsarun.netlify.app/cart/cart", 
+    }, 
+    { 
+      image: ecom,
+      title: "E-Commerce UI",
+      tech: "Html Css",
+      github: "#",  
+      demo: "https://upbasketthemearun.netlify.app/", 
     },
   ];
 
@@ -43,26 +46,26 @@ const MiniProjects = () => {
     : allProjects.filter((p) => p.tech === activeTab);
 
   return (
-    <section className="mini-projects" id="projects">
-      <motion.h2
-        className="section-title"
-        initial={{ opacity: 0, y: -30 }}
+    <section className="mini-projects" id="projects"> 
+      <motion.h2 
+        className="section-title" 
+        initial={{ opacity: 0, y: -30 }} 
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.7 }}
-        viewport={{ once: true }}
+        viewport={{ once: true }} 
       >
         Mini Projects
       </motion.h2>
 
       {/* Tabs */}
       <div className="tabs">
-        {["All", "React", "JavaScript"].map((tab) => (
-          <button
-            key={tab}
-            onClick={() => setActiveTab(tab)}
-            className={activeTab === tab ? "active" : ""}
-          >
-            {tab}
+        {["All", "React", "JavaScript"].map((tab) => ( 
+          <button 
+            key={tab} 
+            onClick={() => setActiveTab(tab)} 
+            className={activeTab === tab ? "active" : ""} 
+          > 
+            {tab} 
           </button>
         ))}
       </div>
@@ -70,10 +73,10 @@ const MiniProjects = () => {
       {/* Grid */}
       <div className="project-grid">
         {filtered.map((proj, i) => (
-          <ProjectCard key={i} {...proj} />
-        ))}
+          <ProjectCard key={i} {...proj} /> 
+        ))} 
       </div>
-    </section>
+    </section> 
   );
 };
 

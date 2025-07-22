@@ -11,7 +11,7 @@ import {
 
 const Contact = () => {
   return (
-    <section id="contact" className="contact-section">
+    <div id="contact" className="contact-section"> 
       <motion.h2
         className="contact-title"
         initial={{ opacity: 0, y: -20 }}
@@ -74,7 +74,7 @@ const Contact = () => {
           </div>
         </motion.div>
       </div>
-    </section>
+    </div>
   );
 };
 

@@ -16,3 +16,22 @@ body {
   height: 100%;
   overflow-x: hidden !important;
 }
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent; /* You can use rgba or a color */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #20a291;
+  border-radius: 10px;
+  transition: background 0.3s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #19ead1; 
+}
+
