@@ -1,6 +1,6 @@
 .tech-section {
   padding: 80px 10%;
-  background: #0a0f1a;
+  /* background-color: #0a0f1a; */
   color: white;
 }
 .tech-heading {
@@ -50,7 +50,7 @@
   justify-content: center;
 }
 .tool {
-  background: #1a1f2e;
+  /* background: #1a1f2e; */
   padding: 10px 15px;
   border-radius: 6px;
   min-width: 110px;
@@ -58,7 +58,8 @@
   font-size: 0.9rem;
   color: white;
   transition: all 0.3s;
-  
+  border: 1px solid #4a4a4a;
+  margin-top: 20px;
 }
 .tool p {
   margin-top: 6px;

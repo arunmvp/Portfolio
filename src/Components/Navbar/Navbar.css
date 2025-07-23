@@ -3,15 +3,35 @@
   min-height: 100vh;
   /* background-color: #09101A; */
   display: flex;
-  background-image: url("../../assets/portback.jpg");
+  /* background-image: url("../../assets/portback.jpg"); */
   background-repeat: no-repeat;
   background-size: cover;
   justify-content: center;
   align-items: center;
   /* padding-top: 20px; */
-  flex-direction: column; 
+  flex-direction: column;
 }
-
+/* .nav2 {
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  background-image: url("../../assets/background2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+} */
+.background{
+  position: fixed;
+  top: 40%;
+  right: 0;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+}
 .navbar {
   position: fixed;
   z-index: 1000;
@@ -74,10 +94,28 @@
   transition: all 0.5s;
   position: relative;
   display: inline-block;
+  cursor: pointer;
 }
 /* .nav-links li{
   height: 1.5rem;
 } */
+.nav-links li .active::after  {
+  bottom: -5px;
+  transition: all 0.5s;
+  opacity: 1;
+}
+.nav-links li .active::before{
+  top: -5px;
+  transition: all 0.5s;
+  opacity: 1;
+
+}
+.nav-links li .active {
+  color: #33ebd3;
+  transition: all 0.5s;
+  transform: scale(1.1);
+}
+
 .nav-links li a:hover {
   color: #33ebd3;
   transition: all 0.5s;
@@ -108,7 +146,7 @@
   transition: all 0.5s;
   opacity: 0;
 }
-.nav-links li:hover a::after {
+/* .nav-links li:hover a::after {
   bottom: -5px;
   transition: all 0.5s;
   opacity: 1;
@@ -117,7 +155,7 @@
   top: -5px;
   transition: all 0.5s;
   opacity: 1;
-}
+} */
 
 .nav-toggle {
   width: max-content;
@@ -247,5 +285,132 @@
   }
   .nav-links li a::before {
     display: none;
+  }
+}
+
+/* src/components/ThemeSwitcher.css */
+
+.theme-toggle {
+  position: fixed;
+  right: -10px;
+  bottom: 50%;
+  z-index: 1000;
+}
+
+/* Icon Button */
+.theme-icon {
+  font-size: 22px;
+  background-color: transparent;
+  backdrop-filter: blur(5px);
+  padding: 12px;
+  border-radius: 10px;
+  cursor: pointer;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+  color: white;
+  transition: transform 0.9s ease;
+}
+.settings{
+  font-size: 1.5rem;
+  animation: rotate 4s linear infinite;
+
+}
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+  
+}
+
+.theme-icon:hover {
+  transform: rotate(90deg) scale(1.02);
+  border-radius: 12px;
+  transition: transform .9s ease;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.35);
+  background-color: transparent;
+}
+
+/* Popup box */
+.theme-popup {
+  position: fixed;
+  right: -5px;
+  bottom: 33%;
+  background: transparent;
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  padding: 16px 24px;
+  width: 170px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
+  opacity: 0;
+  transform: translateX(20px) scale(0.95);
+  pointer-events: none;
+  transition: all 0.4s ease-in-out;
+  z-index: 1000;
+}
+
+/* Show Popup */
+.theme-popup.active {
+  opacity: 1;
+  transform: translateX(0) scale(1);
+  pointer-events: auto;
+}
+
+/* Text */
+.theme-popup p {
+  margin: 0 0 10px;
+  color: #fff;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+/* Theme Box Container */
+.theme-options {
+  display: flex;
+  gap: 12px;
+  justify-content: space-between;
+}
+
+/* Color Boxes */
+.theme-box {
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  border: 2px solid transparent;
+}
+
+.theme-box:hover {
+  transform: scale(1.1);
+  border-color: #888;
+  
+}
+
+.theme-box.light {
+  background: #0f1722;
+  box-shadow: inset 2px 2px 6px #0f1722, inset -2px -2px 6px #0f1722;
+  /* border: 1px solid #a8a6a6; */
+  color: rgb(202, 201, 201);
+}
+
+.theme-box.dark {
+  background: linear-gradient(145deg, #1f1f1f, #2c2c2c);
+  box-shadow: inset 2px 2px 6px #111, inset -2px -2px 6px #333;
+}
+
+/* Responsive */
+@media screen and (max-width: 480px) {
+  .theme-popup {
+    width: 150px;
+    padding: 14px;
+  }
+
+  .theme-box {
+    width: 30px;
+    height: 30px;
   }
 }

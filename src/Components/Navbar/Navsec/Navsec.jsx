@@ -3,6 +3,7 @@ import { FaBars, FaTimes } from "react-icons/fa";
 import "../../Navbar/Navbar.css";
 import logo from '../../../assets/images.png';
 import { motion } from "framer-motion";
+import { Link } from 'react-scroll'; // 👈 ADD THIS
 
 const Navsec = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -24,12 +25,72 @@ const Navsec = () => {
 
         <div className="navsec">
           <ul className={isOpen ? "nav-links active" : "nav-links"}>
-            <li><a className='home' href="#home" onClick={closeMenu}>Home</a></li> 
-            <li><a href="#education" onClick={closeMenu}>About</a></li> 
-            <li><a href="#Resume" onClick={closeMenu}>Resume</a></li>
-            <li><a href="#projects" onClick={closeMenu}>Projects</a></li>
-            <li><a href="#contact" onClick={closeMenu}>Contact</a></li> 
-          </ul>
+            <li>
+              <Link
+                to="home"
+                spy={true}
+                smooth={true}
+                offset={-100}
+                duration={300}
+                onClick={closeMenu}
+                activeClass="active" 
+              >
+                Home
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="education"
+                spy={true}
+                smooth={true}
+                offset={-100}
+                duration={300}
+                onClick={closeMenu}
+                activeClass="active"
+              >
+                About
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="Resume"
+                spy={true}
+                smooth={true}
+                offset={-100}
+                duration={300}
+                onClick={closeMenu}
+                activeClass="active"
+              >
+                Resume
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="projects"
+                spy={true}
+                smooth={true}
+                offset={-100}
+                duration={300}
+                onClick={closeMenu}
+                activeClass="active"
+              >
+                Projects
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="contact"
+                spy={true}
+                smooth={true}
+                offset={-100}
+                duration={300}
+                onClick={closeMenu}
+                activeClass="active"
+              >
+                Contact
+              </Link>
+            </li>
+          </ul> 
 
           <div className="nav-toggle" onClick={toggleMenu}>
             {isOpen ? <FaTimes /> : <FaBars />}

@@ -1,6 +1,6 @@
 .education-section {
-  padding: 4rem 1rem;
-  background-color: #0e1117;
+  padding: 4rem 1rem 6rem 1rem;
+  /* background-color: #0e1117; */
   color: #fff;
   text-align: center;
 }
@@ -20,7 +20,7 @@
 .tab {
   padding: 0.6rem 1.5rem;
   border-radius: 6px;
-  border: 1px solid #248c9fc5;
+  border: 1px solid #5f5f5fc5;
   background-color: transparent;
   color: #29b09e;
   cursor: pointer;
@@ -39,7 +39,7 @@
 }
 
 .bio-box {
-  background-color: #161b22;
+  /* background-color: #161b22; */
   border: 1px solid #2e2e2e;
   border-radius: 12px;
   padding: 3rem;
@@ -76,7 +76,7 @@
 }
 
 .education-card {
-  background-color: #161b22;
+  /* background-color: #161b22; */
   padding: 1.5rem;
   border-radius: 12px;
   text-align: left;

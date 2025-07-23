@@ -1,10 +1,12 @@
-import React from "react";
+import React, { useContext, useState, useEffect } from "react";
 import "./Homemain.css";
 import { motion } from "framer-motion";
 import Tooltip from "@mui/material/Tooltip";
-import profile from "../../assets/profile.jpg";
+import profile from "../../assets/blackwhite.jpg";
+import profile2 from "../../assets/color.jpg";
 import box from "../../assets/box.png";
 import DownloadIcon from "@mui/icons-material/Download";
+import BackgroundContext from "../../Context/BackgroundContext";
 
 const textReveal = {
   hidden: { opacity: 0 },
@@ -16,13 +18,30 @@ const textReveal = {
   }),
 };
 
+const flipWords = ["Coder", "Designer", "Explorer"];
+
 const Homemain = () => {
-  const name = "Hi, I’m Arun.";
+  const { back } = useContext(BackgroundContext);
+  const name = "Hi, I’m Arun!";
+
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % flipWords.length);
+    }, 2000);
+    return () => clearInterval(interval);
+  }, []);
+
+  const [boxImage, setBoxImage] = useState(false);
+
+  const handleMouseOver = () => {
+    setBoxImage(!boxImage);
+  }
 
   return (
     <section className="mainsec" id="home">
       <div className="mainsec1">
-        {/* Typing animation */}
         <h1 className="title1">
           {name.split("").map((char, i) => (
             <motion.span
@@ -38,14 +57,13 @@ const Homemain = () => {
           ))}
         </h1>
 
-        <motion.h2
-          className="subtitle1"
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.9, delay: 0.2 }}
-        >
-          Frontend Dev
-        </motion.h2>
+        {/* Flip Animation */}
+        <div className="flip-container">
+          Creative
+          <div key={currentIndex} className="flip-word">
+            {flipWords[currentIndex]}
+          </div>
+        </div>
 
         <motion.p
           initial={{ opacity: 0 }}
@@ -101,7 +119,11 @@ const Homemain = () => {
             ></motion.i>
           </Tooltip>
         </div>
-        <button className="download-btn">
+
+        <button
+          className="download-btn"
+          style={{ backgroundColor: back ? "#1a1a1a" : "#09101A" }}
+        >
           Download CV
           <span className="download-icon">
             <DownloadIcon />
@@ -109,16 +131,15 @@ const Homemain = () => {
         </button>
       </div>
 
-      {/* mainsec2 with motion */}
       <motion.div
         className="mainsec2"
         initial={{ opacity: 0, x: 100 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 1, delay: 0.6 }}
       >
-        <div className="code-box">
+        <div className="code-box" onMouseOver={handleMouseOver}>
           <img className="boxcode" src={box} alt="" />
-          <img className="propic" src={profile} alt="" />
+          <img className="propic"  src={boxImage ? profile : profile2} alt="" />
           <div className="tag-icon">&lt;/&gt;</div>
         </div>
       </motion.div>

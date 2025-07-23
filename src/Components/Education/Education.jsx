@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import "../Education/Education.css";
+import { useContext } from "react";
+import BackgroundContext from "../../Context/BackgroundContext";
 
 const Education = () => {
   const [activeTab, setActiveTab] = useState("bio");
@@ -31,8 +33,14 @@ const Education = () => {
     // { label: "Freelance", value: "Available" },
   ];
 
+  const { back } = useContext(BackgroundContext);
+
   return (
-    <section className="education-section" id="education">
+    <section
+      className="education-section"
+      id="education"
+      style={{ backgroundColor: !back ? "#0f1722" : "#1a1a1a" }}
+    >
       <h2 className="section-title">About Me</h2>
 
       <div className="edu-tabs">
@@ -54,6 +62,7 @@ const Education = () => {
         {activeTab === "bio" && (
           <motion.div
             className="bio-box"
+            style={{ backgroundColor: !back ? "#0d1520ec" : "#1e1e1eff" }}
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, ease: "easeOut" }}
@@ -75,7 +84,7 @@ const Education = () => {
             transition={{ duration: 0.6, ease: "easeOut" }}
           >
             {educationList.map((edu, index) => (
-              <div className="education-card" key={index}>
+              <div className="education-card" style={{backgroundColor : !back ? "#0d1520ec" : "#1e1e1eff" }} key={index}>
                 <div className="edu-title">{edu.degree}</div>
                 <div className="edu-inst">{edu.institution}</div>
                 <div className="edu-info">

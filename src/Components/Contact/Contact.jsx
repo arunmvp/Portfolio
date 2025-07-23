@@ -8,10 +8,13 @@ import {
   FaLinkedin,
   FaWhatsapp,
 } from "react-icons/fa";
+import { useContext } from "react";
+import BackgroundContext from "../../Context/BackgroundContext";
 
 const Contact = () => {
+  const { back } = useContext(BackgroundContext);
   return (
-    <div id="contact" className="contact-section"> 
+    <div id="contact" className="contact-section" style={{ backgroundColor: !back ? "#0f1722" : "#1a1a1a" }}> 
       <motion.h2
         className="contact-title"
         initial={{ opacity: 0, y: -20 }}
@@ -29,14 +32,15 @@ const Contact = () => {
           transition={{ duration: 0.7 }}
           viewport={{ once: true }}
         >
-          <input type="text" placeholder="Your Name" required />
-          <input type="email" placeholder="Your Email" required />
-          <textarea placeholder="Your Message" rows="6" required></textarea>
+          <input type="text" placeholder="Your Name" required style={{backgroundColor : !back ? "#0d1520ec" : "#1e1e1eff" }} />
+          <input type="email" placeholder="Your Email" required style={{backgroundColor : !back ? "#0d1520ec" : "#1e1e1eff" }} />
+          <textarea placeholder="Your Message" rows="6" required style={{backgroundColor : !back ? "#0d1520ec" : "#1e1e1eff" }}></textarea>
           <button type="submit">Send Message</button>
         </motion.form>
 
         <motion.div
           className="contact-info"
+          style={{backgroundColor : !back ? "#0d1520ec" : "#1e1e1eff" }}
           initial={{ opacity: 0, x: 50 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.7, delay: 0.2 }}

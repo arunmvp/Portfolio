@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 import "./SkillSection.css";
 import { FaExternalLinkAlt } from "react-icons/fa";
+import { useContext } from "react";
+import BackgroundContext from "../../Context/BackgroundContext";
 
 const skills = [
   {
@@ -33,8 +35,10 @@ const skills = [
 const SkillSection = () => {
   const [activeId, setActiveId] = useState(1);
 
+  const { back } = useContext(BackgroundContext);
+
   return (
-    <div className="skill-section">
+    <div className="skill-section" style={{ backgroundColor: !back ? "#0f1722" : "#1a1a1a" }}> 
       <h1 className="skill-title">What I DO</h1>
       {skills.map((skill) => (
         <motion.div

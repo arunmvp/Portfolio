@@ -1,11 +1,15 @@
 import React from "react";
 import { motion } from "framer-motion";
 import "./Footer.css";
+import { useContext } from "react";
+import BackgroundContext from "../../Context/BackgroundContext";
 
 const Footer = () => {
+  const { back } = useContext(BackgroundContext);
   return (
     <motion.section
       className="hire-section"
+      style={{ backgroundColor: !back ? "#0f1722" : "#1a1a1a" }}
       id="hireme"
       initial={{ opacity: 1, y: 0 }}
       whileInView={{ opacity: 1, y: 0 }}

@@ -23,7 +23,7 @@ const Scroll = () => {
           animate={{ rotate: [0, 15, -15, 0] }} 
           transition={{ 
             repeat: Infinity, 
-            duration: 2, 
+            duration: 1.5, 
             ease: "easeInOut", 
           }}
         >
