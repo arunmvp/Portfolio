@@ -6,12 +6,13 @@ import project2 from "../../assets/cart.png";
 import project3 from "../../assets/movies.png";
 import ecom from "../../assets/ecommerce.png";
 import ecom2 from "../../assets/e-com.png";
+import cartreact from '../../assets/cartreact.png';
 import "./MiniProjects.css";
 import { useContext } from "react";
-import BackgroundContext from "../../Context/BackgroundContext";
+import BackgroundContext from "../../Context/BackgroundContext"; 
 
-const MiniProjects = () => {
-  const allProjects = [
+const MiniProjects = () => { 
+  const allProjects = [ 
     {
       image: project1,
       title: "Todo App",
@@ -50,10 +51,17 @@ const MiniProjects = () => {
       github: "https://github.com/arunmvp/arun2321.git",
       demo: "https://arun-react.netlify.app/",
     },
+    {
+      image: cartreact,
+      title: "Cart UI (Fecth API, Redux)",
+      tech: "React",
+      github: "https://github.com/arunmvp/cartui.git",
+      demo : "https://cartuisys.netlify.app/"
+    }
   ];
 
-  const [activeTab, setActiveTab] = useState("All");
-  const { back } = useContext(BackgroundContext);
+  const [activeTab, setActiveTab] = useState("All"); 
+  const { back } = useContext(BackgroundContext); 
 
   const filtered =
     activeTab === "All"
@@ -77,13 +85,13 @@ const MiniProjects = () => {
           Mini Projects
         </motion.h2>
 
-        {/* Tabs */}
+        {/* Tabs */} 
         <div className="tabs">
           {["All", "React", "JavaScript"].map((tab) => (
-            <button
+            <button 
               key={tab}
-              onClick={() => setActiveTab(tab)}
-              className={activeTab === tab ? "active" : ""}
+              onClick={() => setActiveTab(tab)}  
+              className={activeTab === tab ? "active" : ""}   
             >
               {tab}
             </button>

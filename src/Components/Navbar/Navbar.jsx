@@ -16,6 +16,8 @@ const Navbar = () => {
   const background = () => setBack(true);
   const backgroundT = () => setBack(false);
 
+  
+
   useEffect(() => {
     const handleClickOutside = (e) => {
       if (
@@ -27,6 +29,8 @@ const Navbar = () => {
         setOpen(false);
       }
     };
+
+
 
     document.addEventListener("click", handleClickOutside);
     return () => document.removeEventListener("click", handleClickOutside);

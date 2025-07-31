@@ -6,9 +6,9 @@ const BackgroundProvider = ({ children }) => {
   const [back, setBack] = useState(false);
 
   return (
-    <BackgroundContext.Provider value={{ back, setBack }}>
+    <BackgroundContext.Provider value={{ back, setBack }}> 
       {children}
-    </BackgroundContext.Provider>
+    </BackgroundContext.Provider> 
   );
 };
 

@@ -261,7 +261,7 @@
   }
   .mainsec2{
     height: 100% !important;
-    padding-top: 30px;
+    padding-top: 94px;
   }
   .mainsec1{
     height: 90%;
@@ -305,9 +305,9 @@
 }
 
 .flip-word {
-  font-size: clamp(1.8rem, 2vw + 1rem, 3rem);
+  font-size: clamp(2rem, 2vw + 1rem, 3rem);
   font-weight: 700;
-  color: #00bfff;
+  color: #00bfff !important;
   display: inline-block;
   animation: flipIn 0.6s ease-in-out;
   transform-origin: center;

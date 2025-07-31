@@ -133,9 +133,9 @@ const Homemain = () => {
 
       <motion.div
         className="mainsec2"
-        initial={{ opacity: 0, x: 100 }}
-        animate={{ opacity: 1, x: 0 }}
-        transition={{ duration: 1, delay: 0.6 }}
+        initial={{ opacity: 0, x: 200 ,y:200, scale:.4 }} 
+        animate={{ opacity: 1, x: 0,y:0 , scale:1 }} 
+        transition={{ duration: 1, delay: 0.6 }} 
       >
         <div className="code-box" onMouseOver={handleMouseOver}>
           <img className="boxcode" src={box} alt="" />

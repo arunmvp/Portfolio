@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import "./App.css";
 import Contact from "./Components/Contact/Contact";
 import Education from "./Components/Education/Education";
@@ -11,6 +12,7 @@ import TechStack from "./Components/TechStack.jsx/TechStack";
 
 function App() {
  
+    
 
   return (
     <>
