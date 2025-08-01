@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import "./Footer.css";
 import { useContext } from "react";
 import BackgroundContext from "../../Context/BackgroundContext";
+import resume from "../../assets/Arun_Pandian.pdf"
 
 const Footer = () => {
   const { back } = useContext(BackgroundContext);
@@ -35,7 +36,7 @@ const Footer = () => {
         transition={{ delay: 0.8 }}
       >
         <a href="#contact" className="btn">Hire Me</a>
-        <a href="/resume.pdf" download className="btn-outline">Download Resume</a>
+        <a href={resume} download className="btn-outline">Download Resume</a>
       </motion.div>
     </motion.section>
   );

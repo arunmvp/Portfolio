@@ -7,6 +7,7 @@ import profile2 from "../../assets/color.jpg";
 import box from "../../assets/box.png";
 import DownloadIcon from "@mui/icons-material/Download";
 import BackgroundContext from "../../Context/BackgroundContext";
+import resume from "../../assets/Arun_Pandian.pdf"
 
 const textReveal = {
   hidden: { opacity: 0 },
@@ -120,15 +121,17 @@ const Homemain = () => {
           </Tooltip>
         </div>
 
-        <button
+        <a href={resume} download >
+          <button
           className="download-btn"
           style={{ backgroundColor: back ? "#1a1a1a" : "#09101A" }}
-        >
-          Download CV
+        > 
+         Download CV
           <span className="download-icon">
             <DownloadIcon />
           </span>
         </button>
+        </a>
       </div>
 
       <motion.div

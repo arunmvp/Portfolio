@@ -8,6 +8,18 @@ const Education = () => {
   const [activeTab, setActiveTab] = useState("bio");
 
   const educationList = [
+     {
+      degree: "FullStack Web development ",
+      institution: "Code Purple Academy",
+      year: "2024 – 2025",
+      place: "Madurai, Tamil Nadu",
+    },
+    {
+      degree: "Draughtsman Mechanical ",
+      institution: "E Careerpluz Info India Pvt. Ltd", 
+      year: "2022 – 2023", 
+      place: "Madurai, Tamil Nadu",
+    },
     {
       degree: "B.Com",
       institution: "Ayya Nadar Janaki Ammal College",
@@ -18,7 +30,7 @@ const Education = () => {
       degree: "HSC",
       institution: "SHNV Higher Secondary School",
       year: "2017 – 2019",
-      place: "Sivakasi, Tamil Nadu",
+      place: "Sivakasi, Tamil Nadu", 
     },
   ];
 

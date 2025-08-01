@@ -65,13 +65,13 @@ const Contact = () => {
           <div className="info-item">
             <h3>Social Links</h3>
             <div className="social-links">
-              <a href="https://github.com" target="_blank" rel="noreferrer">
+              <a href="https://github.com/arunmvp" target="_blank" rel="noreferrer">
                 <FaGithub /> GitHub
               </a>
-              <a href="https://linkedin.com" target="_blank" rel="noreferrer">
+              <a href="https://www.linkedin.com/in/arun-pandian-9833a7357/" target="_blank" rel="noreferrer">
                 <FaLinkedin /> LinkedIn
               </a>
-              <a href="https://wa.me/91XXXXXXXXXX" target="_blank" rel="noreferrer">
+              <a href="https://wa.me/916385843484" target="_blank" rel="noreferrer">
                 <FaWhatsapp /> WhatsApp
               </a>
             </div>

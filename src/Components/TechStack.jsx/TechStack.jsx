@@ -8,13 +8,11 @@ import {
   FaReact,
   FaNode,
   FaGitAlt,
-  FaFigma,
 } from "react-icons/fa";
 import {
   SiMysql,
   SiFirebase,
   SiPostman,
-  SiBootstrap,
   SiMui,
   SiExpress,
 } from "react-icons/si";
@@ -36,11 +34,9 @@ const backendDatabaseSkills = [
 ];
 
 const otherTools = [
-  { title: "Bootstrap", icon: <SiBootstrap /> },
   { title: "Material UI", icon: <SiMui /> },
   { title: "Postman", icon: <SiPostman /> },
   { title: "Git & GitHub", icon: <FaGitAlt /> },
-  { title: "Figma", icon: <FaFigma /> },
 ];
 
 const TechStack = () => {
