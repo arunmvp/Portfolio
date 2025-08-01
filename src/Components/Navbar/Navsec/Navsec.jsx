@@ -51,7 +51,7 @@ const Navsec = () => {
                 About
               </Link>
             </li>
-            <li>
+            {/* <li>
               <Link
                 to="Resume"
                 spy={true}
@@ -63,7 +63,7 @@ const Navsec = () => {
               >
                 Resume
               </Link>
-            </li>
+            </li> */}
             <li>
               <Link
                 to="projects"
