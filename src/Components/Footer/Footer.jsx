@@ -3,20 +3,19 @@ import { motion } from "framer-motion";
 import "./Footer.css";
 import { useContext } from "react";
 import BackgroundContext from "../../Context/BackgroundContext";
-import resume from "../../assets/Arun_Pandian.pdf"
+import resume from "../../assets/Arun_Pandian-.pdf"
 
 const Footer = () => {
   const { back } = useContext(BackgroundContext);
-  return (
+  return ( 
     <motion.section
       className="hire-section"
-      style={{ backgroundColor: !back ? "#0f1722" : "#1a1a1a" }}
+      style={{ backgroundColor: !back ? "#0f1722" : "#1a1a1a" }} 
       id="hireme"
       initial={{ opacity: 1, y: 0 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6 }}
     >
-      
 
       <motion.p
         className="hire-punchline"
@@ -26,9 +25,7 @@ const Footer = () => {
       >
         Though I’m a fresher, I bring the fire to learn fast, work smart, and grow with your team. 
       </motion.p>
-
-      
-
+  
       <motion.div
         className="hire-buttons"
         initial={{ opacity: 0 }}

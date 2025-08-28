@@ -6,7 +6,6 @@ import {
   FaCss3Alt,
   FaJs,
   FaReact,
-  FaNode,
   FaGitAlt,
 } from "react-icons/fa";
 import {
@@ -14,7 +13,8 @@ import {
   SiFirebase,
   SiPostman,
   SiMui,
-  SiExpress,
+  SiPython,
+  SiDjango,
 } from "react-icons/si";
 import { useContext } from "react";
 import BackgroundContext from "../../Context/BackgroundContext";
@@ -27,8 +27,8 @@ const frontendSkills = [
 ];
 
 const backendDatabaseSkills = [
-  { title: "Node.js", icon: <FaNode />, percent: 85 },
-  { title: "Express.js", icon: <SiExpress />, percent: 80 },
+  { title: "Python", icon: <SiPython />, percent: 85 },
+  { title: "Django", icon: <SiDjango />, percent: 80 },
   { title: "MySQL", icon: <SiMysql />, percent: 75 },
   { title: "Firebase", icon: <SiFirebase />, percent: 70 },
 ];

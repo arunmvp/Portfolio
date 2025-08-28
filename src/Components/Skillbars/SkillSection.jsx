@@ -22,7 +22,7 @@ const skills = [
     id: 3,
     title: "Back-End",
     description:
-      "I build robust and scalable backend systems using Node.js, Express.js, and Sequelize. My solutions ensure efficient data handling and seamless integration, providing a solid foundation for web applications.",
+      "I build robust and scalable backend systems using Python , Django framework. My solutions ensure efficient data handling and seamless integration, providing a solid foundation for web applications.",
   },
   {
     id: 4,

@@ -7,7 +7,7 @@ import profile2 from "../../assets/color.jpg";
 import box from "../../assets/box.png";
 import DownloadIcon from "@mui/icons-material/Download";
 import BackgroundContext from "../../Context/BackgroundContext";
-import resume from "../../assets/Arun_Pandian.pdf"
+import resume from "../../assets/Arun_Pandian-.pdf"
 
 const textReveal = {
   hidden: { opacity: 0 },
@@ -25,7 +25,7 @@ const Homemain = () => {
   const { back } = useContext(BackgroundContext);
   const name = "Hi, I’m Arun!";
 
-  const [currentIndex, setCurrentIndex] = useState(0);
+  const [currentIndex, setCurrentIndex] = useState(0); 
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -61,10 +61,10 @@ const Homemain = () => {
         {/* Flip Animation */}
         <div className="flip-container">
           Creative
-          <div key={currentIndex} className="flip-word">
+          <div key={currentIndex} className="flip-word"> 
             {flipWords[currentIndex]}
-          </div>
-        </div>
+          </div> 
+        </div> 
 
         <motion.p
           initial={{ opacity: 0 }}

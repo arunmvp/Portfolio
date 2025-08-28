@@ -14,7 +14,7 @@ import BackgroundContext from "../../Context/BackgroundContext";
 const Contact = () => {
   const { back } = useContext(BackgroundContext);
   return (
-    <div id="contact" className="contact-section" style={{ backgroundColor: !back ? "#0f1722" : "#1a1a1a" }}> 
+    <div id="contact" className="contact-section" style={{ backgroundColor: !back ? "#0f1722" : "#1a1a1a" }}>
       <motion.h2
         className="contact-title"
         initial={{ opacity: 0, y: -20 }}
@@ -38,9 +38,9 @@ const Contact = () => {
           <button type="submit">Send Message</button>
         </motion.form>
 
-        <motion.div
+        <motion.div 
           className="contact-info"
-          style={{backgroundColor : !back ? "#0d1520ec" : "#1e1e1eff" }}
+          style={{backgroundColor : !back ? "#0d1520ec" : "#1e1e1eff" }} 
           initial={{ opacity: 0, x: 50 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.7, delay: 0.2 }}
