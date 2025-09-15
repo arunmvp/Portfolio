@@ -6,6 +6,7 @@ import project2 from "../../assets/cart.png";
 import project3 from "../../assets/movies.png";
 import ecom from "../../assets/ecommerce.png";
 import ecom2 from "../../assets/e-com.png";
+import ecom33 from '../../assets/ecom33.png';
 import cartreact from '../../assets/cartreact.png';
 import "./MiniProjects.css";
 import { useContext } from "react";
@@ -50,6 +51,13 @@ const MiniProjects = () => {
       tech: "React",
       github: "https://github.com/arunmvp/arun2321.git",
       demo: "https://arun-react.netlify.app/",
+    },
+      {
+      image: ecom33,
+      title: "E-Commerce Full Stack(Django)",
+      tech: "React",
+      github: "https://github.com/arunmvp/django-frontend.git",
+      demo: "https://cake-art-arun.netlify.app/",
     },
     {
       image: cartreact,
