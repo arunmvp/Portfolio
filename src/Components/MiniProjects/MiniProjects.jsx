@@ -61,7 +61,7 @@ const MiniProjects = () => {
     },
     {
       image: cartreact,
-      title: "Cart UI (Fecth API, Redux)",
+      title: "Cart UI (Fetch API, Redux)",
       tech: "React",
       github: "https://github.com/arunmvp/cartui.git",
       demo : "https://cartuisys.netlify.app/"
