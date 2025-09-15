@@ -7,7 +7,7 @@ import profile2 from "../../assets/color.jpg";
 import box from "../../assets/box.png";
 import DownloadIcon from "@mui/icons-material/Download";
 import BackgroundContext from "../../Context/BackgroundContext";
-import resume from "../../assets/Arun_Pandian-.pdf"
+import resume from "../../assets/ArunPandian_P.pdf"
 
 const textReveal = {
   hidden: { opacity: 0 },
