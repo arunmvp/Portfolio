@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import "./Footer.css";
 import { useContext } from "react";
 import BackgroundContext from "../../Context/BackgroundContext";
-import resume from "../../assets/ArunPandian_P.pdf"
+import resume from "../../assets/ARUN_PANDIAN_P_RE.pdf"
 
 const Footer = () => {
   const { back } = useContext(BackgroundContext);
