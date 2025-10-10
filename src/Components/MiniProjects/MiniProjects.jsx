@@ -8,6 +8,7 @@ import ecom from "../../assets/ecommerce.png";
 import ecom2 from "../../assets/e-com.png";
 import ecom33 from '../../assets/ecom33.png';
 import cartreact from '../../assets/cartreact.png';
+import mern from '../../assets/mern.png'
 import "./MiniProjects.css";
 import { useContext } from "react";
 import BackgroundContext from "../../Context/BackgroundContext"; 
@@ -51,6 +52,13 @@ const MiniProjects = () => {
       tech: "React",
       github: "https://github.com/arunmvp/arun2321.git",
       demo: "https://arun-react.netlify.app/",
+    },
+    {
+      image: mern,
+      title: "E-Commerce Full Stack(MERN)",
+      tech: "React",
+      github: "https://github.com/arunmvp/mern-frontend",
+      demo: "https://mern-pro.netlify.app/",
     },
       {
       image: ecom33,
