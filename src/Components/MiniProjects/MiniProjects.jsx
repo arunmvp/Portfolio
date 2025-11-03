@@ -9,12 +9,21 @@ import ecom2 from "../../assets/e-com.png";
 import ecom33 from '../../assets/ecom33.png';
 import cartreact from '../../assets/cartreact.png';
 import mern from '../../assets/mern.png'
+import todo from '../../assets/todo-mern.png'
 import "./MiniProjects.css";
 import { useContext } from "react";
 import BackgroundContext from "../../Context/BackgroundContext"; 
 
 const MiniProjects = () => { 
   const allProjects = [ 
+    {
+      image: todo,
+      title: "Todo App - MERN",
+      tech: "Fullstack",
+      github:
+        "https://github.com/arunmvp/mytodo",
+      demo: "https://mytod0.netlify.app/",
+    },
     {
       image: project1,
       title: "Todo App",
@@ -55,15 +64,15 @@ const MiniProjects = () => {
     },
     {
       image: mern,
-      title: "E-Commerce Full Stack(MERN)",
-      tech: "React",
+      title: "E-Commerce - MERN",
+      tech: "Fullstack",
       github: "https://github.com/arunmvp/mern-frontend",
       demo: "https://mern-pro.netlify.app/",
     },
       {
       image: ecom33,
-      title: "E-Commerce Full Stack(Django)",
-      tech: "React",
+      title: "E-Commerce - Django",
+      tech: "Fullstack",
       github: "https://github.com/arunmvp/django-frontend.git",
       demo: "https://cake-art-arun.netlify.app/",
     },
@@ -103,7 +112,7 @@ const MiniProjects = () => {
 
         {/* Tabs */} 
         <div className="tabs">
-          {["All", "React", "JavaScript"].map((tab) => (
+          {["All", "React", "JavaScript", "Fullstack"].map((tab) => (
             <button 
               key={tab}
               onClick={() => setActiveTab(tab)}  

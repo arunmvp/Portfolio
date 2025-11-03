@@ -22,13 +22,13 @@ const skills = [
     id: 3,
     title: "Back-End",
     description:
-      "I build robust and scalable backend systems using Python , Django framework. My solutions ensure efficient data handling and seamless integration, providing a solid foundation for web applications.",
+      "I build robust and scalable backend systems using Node.js, Express.js framewrok. My solutions ensure efficient data handling and seamless integration, providing a solid foundation for web applications.",
   },
   {
     id: 4,
     title: "Database",
     description:
-      "I specialize in designing and managing databases using MySQL, other SQL databases, and Firebase. My expertise includes creating efficient database schemas, optimizing queries, ensuring data integrity, and security.",
+      "I specialize in designing and managing databases using MySQL, MongoDB and Firebase. My expertise includes creating efficient database schemas, optimizing queries, ensuring data integrity, and security.",
   },
 ];
 

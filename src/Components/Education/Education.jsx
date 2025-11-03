@@ -8,11 +8,16 @@ const Education = () => {
   const [activeTab, setActiveTab] = useState("bio");
 
   const educationList = [
+    {
+      degree: "Frontend development Internship",
+      institution: "Saiket systems",
+      year: "sep-oct 2025",
+    },
      {
       degree: "FullStack Web development ",
       institution: "Code Purple Academy",
       year: "2024 – 2025",
-      place: "Madurai, Tamil Nadu",
+      place: "Coimbatore, Tamil Nadu",
     },
     {
       degree: "Draughtsman Mechanical ",
